@@ -1,0 +1,12 @@
+diff --git a/src/player.c b/src/player.c
+index 753e3df..d7e1de3 100644
+--- a/src/player.c
++++ b/src/player.c
+@@ -1890,6 +1890,7 @@ static void armarTituloGuardado(void) {
+   cacheboost_backend_titulo(alvo);
+ }
+ 
++static int capsAberto;   // a definicao completa vem mais abaixo (capitulos-icone.patch)
+ void player_abrir(int indiceCatalogo, const char *url) {
+ #ifdef NV_TOUCH_UI
+   avToqueCanal[0] = 0;
